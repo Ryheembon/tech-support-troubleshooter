@@ -1,8 +1,4 @@
-Sure! Here's the complete README.md for your Tech Support Troubleshooter project, all on one page:
-
-markdown
-Copy
-Edit
+```markdown
 # Tech Support Troubleshooter
 
 A full-stack **Tech Support Troubleshooter** web app built using **FastAPI** (for the backend) and **React/Next.js** (for the frontend). This app helps users troubleshoot common technical issues by providing detailed solutions, media (images/videos), and external resources.
@@ -37,76 +33,82 @@ A full-stack **Tech Support Troubleshooter** web app built using **FastAPI** (fo
 ```bash
 git clone https://github.com/Ryheembon/tech-support-troubleshooter.git
 cd tech-support-troubleshooter
-2. Backend Setup (FastAPI)
+```
+
+### 2. Backend Setup (FastAPI)
+
 Navigate to the backend folder:
 
-bash
-Copy
-Edit
+```bash
 cd tech_support_backend
+```
+
 Create and activate a Python virtual environment:
 
-bash
-Copy
-Edit
+```bash
 python -m venv venv  # Create virtual environment
 source venv/bin/activate  # Activate virtual environment (Linux/macOS)
 venv\Scripts\activate  # Windows
+```
+
 Install the required dependencies:
 
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
+```
+
 Run the FastAPI server:
 
-bash
-Copy
-Edit
+```bash
 uvicorn main:app --reload
-The backend will be running at http://127.0.0.1:8000.
+```
 
-3. Frontend Setup (React/Next.js)
+The backend will be running at `http://127.0.0.1:8000`.
+
+### 3. Frontend Setup (React/Next.js)
+
 Navigate to the frontend folder:
 
-bash
-Copy
-Edit
+```bash
 cd tech_support_frontend
+```
+
 Install the required dependencies:
 
-bash
-Copy
-Edit
+```bash
 npm install
+```
+
 Run the React/Next.js development server:
 
-bash
-Copy
-Edit
+```bash
 npm run dev
-The frontend will be available at http://localhost:3000.
+```
 
-4. Testing the App
-Open the frontend in your browser (http://localhost:3000).
-Select an issue from the dropdown to see the troubleshooting steps, media, and external links returned from the FastAPI backend.
-API Documentation
+The frontend will be available at `http://localhost:3000`.
+
+### 4. Testing the App
+
+1. Open the frontend in your browser (`http://localhost:3000`).
+2. Select an issue from the dropdown to see the troubleshooting steps, media, and external links returned from the FastAPI backend.
+
+## API Documentation
+
 The backend exposes the following API endpoint:
 
-POST /troubleshoot: Accepts an issue string (e.g., "Wi-Fi not working") and returns a solution with steps, media, and external links.
-Example request:
+- **POST `/troubleshoot`**: Accepts an issue string (e.g., "Wi-Fi not working") and returns a solution with steps, media, and external links.
 
-json
-Copy
-Edit
+**Example request:**
+
+```json
 {
   "issue": "Wi-Fi not working"
 }
-Example response:
+```
 
-json
-Copy
-Edit
+**Example response:**
+
+```json
 {
   "solution": {
     "text": "Step 1: Restart your router and modem. ...",
@@ -117,10 +119,11 @@ Edit
     ]
   }
 }
-File Structure
-java
-Copy
-Edit
+```
+
+## File Structure
+
+```
 tech-support-troubleshooter/
 ├── backend/
 │   ├── main.py
@@ -130,23 +133,36 @@ tech-support-troubleshooter/
     ├── package.json
     ├── public/
     └── ...
-Backend Folder (tech_support_backend)
-main.py: The FastAPI application file that handles incoming requests and returns troubleshooting solutions.
-requirements.txt: A list of Python dependencies required for the backend.
-Frontend Folder (tech_support_frontend)
-package.json: The list of dependencies for the React/Next.js frontend.
-public/: Contains static files like images and icons.
-pages/: Contains React components, including the main page where users can select issues and view solutions.
-Contributing
+```
+
+### Backend Folder (`tech_support_backend`)
+
+- `main.py`: The FastAPI application file that handles incoming requests and returns troubleshooting solutions.
+- `requirements.txt`: A list of Python dependencies required for the backend.
+
+### Frontend Folder (`tech_support_frontend`)
+
+- `package.json`: The list of dependencies for the React/Next.js frontend.
+- `public/`: Contains static files like images and icons.
+- `pages/`: Contains React components, including the main page where users can select issues and view solutions.
+
+## Contributing
+
 Feel free to fork this repository and submit pull requests. If you find any bugs or have suggestions for improvements, please open an issue.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
 
-markdown
-Copy
-Edit
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
+### **What’s Included in This `README.md`**
 
+1. **Project Overview**: A brief description of the project, including its key features.
+2. **Technologies Used**: The technologies powering both the **backend** (FastAPI, Pydantic, Uvicorn) and **frontend** (React, Next.js, Axios, Tailwind CSS).
+3. **Setup Instructions**: Detailed instructions on how to clone the repository, set up both the **backend** and **frontend**, and run the app locally.
+4. **API Documentation**: Explanation of the main **API endpoint** (`POST /troubleshoot`), including example requests and responses.
+5. **File Structure**: Breakdown of the project directory structure to help users understand the organization of the codebase.
+6. **Contributing**: Information on how to contribute to the project by forking, submitting pull requests, and opening issues.
+7. **License**: Information about the project’s license (MIT License).
+```
