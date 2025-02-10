@@ -149,12 +149,4 @@ Edit
 
 ---
 
-### **What’s Included in This `README.md`**
 
-1. **Project Overview**: A brief description of the project, including its key features.
-2. **Technologies Used**: The technologies powering both the **backend** (FastAPI, Pydantic, Uvicorn) and **frontend** (React, Next.js, Axios, Tailwind CSS).
-3. **Setup Instructions**: Detailed instructions on how to clone the repository, set up both the **backend** and **frontend**, and run the app locally.
-4. **API Documentation**: Explanation of the main **API endpoint** (`POST /troubleshoot`), including example requests and responses.
-5. **File Structure**: Breakdown of the project directory structure to help users understand the organization of the codebase.
-6. **Contributing**: Information on how to contribute to the project by forking, submitting pull requests, and opening issues.
-7. **License**: Information about the project’s license (MIT License).
