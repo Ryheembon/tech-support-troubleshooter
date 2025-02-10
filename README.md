@@ -5,7 +5,7 @@ A full-stack **Tech Support Troubleshooter** web app built using **FastAPI** (fo
 
 ### 📸 Screenshot  
 
-![Tech Support Troubleshooter]troubleshooter_screenshot.png)
+![Tech Support Troubleshooter](frontend/public/images/troubleshooter_screenshot.png)
 
 
 A full-stack **Tech Support Troubleshooter** web app built using **FastAPI** (for the backend) and **React/Next.js** (for the frontend). This app helps users troubleshoot common technical issues by providing detailed solutions, media (images/videos), and external resources.
