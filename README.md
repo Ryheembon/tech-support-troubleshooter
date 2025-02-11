@@ -5,7 +5,8 @@ A full-stack **Tech Support Troubleshooter** web app built using **FastAPI** (fo
 
 ### 📸 Screenshot   
 
-![Troubleshooter Screenshot](troubleshooter_screenshot.jpg)
+![Troubleshooter Screenshot](troubleshooter_screenshot.png)
+
 
 
 
