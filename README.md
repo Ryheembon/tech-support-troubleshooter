@@ -1,4 +1,3 @@
-```markdown
 ## Tech Support Troubleshooter
 
 A full-stack **Tech Support Troubleshooter** web app built using **FastAPI** (for the backend) and **React/Next.js** (for the frontend).  
