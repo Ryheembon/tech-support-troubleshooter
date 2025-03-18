@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+  
+  /* Ensure all form inputs have black text */
+  input, textarea, select {
+    color: black !important;
+  }
+  
+  /* Dark mode styles */
+  .dark {
+    --background: #121212;
+    --foreground: #ffffff;
+    
+    color-scheme: dark;
+  }
+  
+  .dark .bg-white\/95 {
+    background-color: rgba(18, 18, 18, 0.95);
+  }
+  
+  .dark .text-gray-800 {
+    color: #e0e0e0;
+  }
+  
+  .dark .text-gray-700 {
+    color: #d0d0d0;
+  }
+  
+  .dark .text-gray-600 {
+    color: #a0a0a0;
+  }
+  
+  .dark .border-gray-300 {
+    border-color: #3a3a3a;
+  }
+  
+  .dark .bg-white\/50 {
+    background-color: rgba(30, 30, 30, 0.5);
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/95 backdrop-blur-sm border border-white/20;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glass morphism effects */
+.glass {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-start via-purple-mid to-pink-end;
+} 
