@@ -9,11 +9,10 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, #4f46e5 0%, #7c3aed 25%, #c026d3 50%, #db2777 75%, #e11d48 100%)',
+      },
       colors: {
-        'indigo-start': '#4F46E5',
-        'purple-mid': '#7C3AED',
-        'pink-end': '#EC4899',
-        
         primary: {
           50: '#f0f9ff',
           100: '#e0f2fe',
