@@ -4,7 +4,7 @@ A modern, user-friendly technical support interface built with Next.js and Tailw
 
 ## 📸 Screenshot
 
-![Tech Support Interface Screenshot](screenshot.png)
+![Tech Support Interface Screenshot](tech.png)
 
 ## Features
 
