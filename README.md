@@ -2,6 +2,10 @@
 
 A modern, user-friendly technical support interface built with Next.js and Tailwind CSS.
 
+## 📸 Screenshot
+
+![Tech Support Interface Screenshot](screenshot.png)
+
 ## Features
 
 - Interactive troubleshooting flows for common issues
