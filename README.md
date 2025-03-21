@@ -107,7 +107,7 @@ npm install -D @tailwindcss/typography @tailwindcss/forms
 
 ## 📸 Screenshot
 
-![Tech Support Interface Screenshot](screenshot.png)
+![Tech Support Interface Screenshot](tech.png)
 
 ## Features
 
@@ -265,4 +265,4 @@ If the backend isn't responding:
 # Verify Python environment is active (should see (venv) in terminal)
 source venv/bin/activate
 pip list  # Should show fastapi, uvicorn, and pydantic
-``` 
+```
