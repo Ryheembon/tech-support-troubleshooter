@@ -18,6 +18,10 @@ A modern, user-friendly technical support interface built with Next.js and Tailw
 ## Getting Started
 
 1. Clone the repository
+   ```bash
+   git clone https://github.com/Ryheembon/tech-support-troubleshooter.git
+   cd tech-support-troubleshooter
+   ```
 2. Install dependencies:
    ```bash
    npm install
@@ -45,6 +49,60 @@ The application uses modern React features and follows best practices for perfor
 - Responsive animations and transitions
 - Comprehensive troubleshooting flows
 
+## Project Structure
+
+```
+tech-support/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx           # Main application page
+│   │   ├── layout.tsx         # Root layout component
+│   │   ├── globals.css        # Global styles
+│   │   └── troubleshootingSteps.ts  # Troubleshooting logic
+│   └── components/
+│       └── ErrorBoundary.tsx  # Error handling component
+├── public/
+│   └── screenshot.png         # Application screenshot
+├── tailwind.config.js         # Tailwind configuration
+├── next.config.js            # Next.js configuration
+└── package.json              # Project dependencies
+```
+
+## Key Features Explained
+
+### Troubleshooting Flow
+- Step-by-step guided process for common technical issues
+- Dynamic solution paths based on user responses
+- Visual progress tracking
+- Session history preservation
+
+### User Interface
+- Modern glass morphism design
+- Smooth animations and transitions
+- Responsive layout for all devices
+- Accessible form controls
+
+### Error Handling
+- Graceful error recovery
+- User-friendly error messages
+- Rate limiting protection
+- Session management
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## License
 
-MIT 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/) - The React Framework
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Lucide Icons](https://lucide.dev/) - For beautiful icons
+- All contributors who have helped shape this project 
