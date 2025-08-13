@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Whisperer - AI-Powered Tech Support</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>Tech Whisperer</h1>
+            </div>
+            <p class="tagline">AI-Powered Tech Support Assistant</p>
+        </header>
+
+        <div id="authSection" class="auth-section">
+            <div class="auth-container">
+                <h2>Welcome to Tech Whisperer</h2>
+                <p>Get instant AI-powered help for your tech issues</p>
+                
+                <div class="auth-tabs">
+                    <button class="tab-btn active" onclick="showTab('login')">Login</button>
+                    <button class="tab-btn" onclick="showTab('register')">Register</button>
+                </div>
+
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginUsername">Username</label>
+                        <input type="text" id="loginUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </form>
+
+                <form id="registerForm" class="auth-form hidden">
+                    <div class="form-group">
+                        <label for="registerUsername">Username</label>
+                        <input type="text" id="registerUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Register
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div id="mainApp" class="main-app hidden">
+            <div class="user-info">
+                <span>Welcome, <span id="userDisplayName"></span>!</span>
+                <button onclick="logout()" class="btn btn-secondary">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+
+            <div class="diagnosis-section">
+                <h2>Describe Your Tech Issue</h2>
+                <p>Tell us what's happening with your device in plain English</p>
+                
+                <form id="diagnosisForm" class="diagnosis-form">
+                    <div class="form-group">
+                        <textarea 
+                            id="issueDescription" 
+                            placeholder="Example: My computer is running very slowly and sometimes freezes when I open multiple programs..."
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-magic"></i> Get AI Diagnosis
+                    </button>
+                </form>
+            </div>
+
+            <div id="resultsSection" class="results-section hidden">
+                <div class="result-card">
+                    <div class="result-header">
+                        <h3>AI Diagnosis</h3>
+                        <div class="confidence">
+                            <span class="confidence-label">Confidence:</span>
+                            <span id="confidenceScore" class="confidence-score"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="diagnosis-content">
+                        <p id="diagnosisText"></p>
+                    </div>
+
+                    <div class="follow-up-section">
+                        <h4>Follow-up Questions</h4>
+                        <ul id="followUpQuestions"></ul>
+                    </div>
+
+                    <div class="solutions-section">
+                        <h4>Recommended Solutions</h4>
+                        <ul id="solutionsList"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h2>Your Troubleshooting History</h2>
+                <div id="sessionsList" class="sessions-list">
+                    <div class="loading">Loading your sessions...</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loadingOverlay" class="loading-overlay hidden">
+            <div class="loading-spinner">
+                <i class="fas fa-cog fa-spin"></i>
+                <p>AI is analyzing your issue...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
